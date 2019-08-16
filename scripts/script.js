@@ -50,10 +50,10 @@ function newLoc (event) {
 
   form.reset();
   console.log('New Location Data:', newLoca);
-  
-  
+  //add formula for 
+
+  newLoc();
 }
-newLoc();
 
 new Locations('1st And Pike', 23,	65,	6.3);
 new Locations('SeaTac Airport', 3,	24,	1.2);
