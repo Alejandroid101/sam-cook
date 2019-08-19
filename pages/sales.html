@@ -8,18 +8,18 @@
   <!-- <link href="/styles/reset.css" rel="stylesheet" type="text/css"> -->
 </head>
 
+<header>
+  <h1>Pat's Salmon Cookies </h1>
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/sales.html">Sales Data</a></li>
+    </ul>
+  </nav>
+</header>
 <body>
-  <header>
-    <h1>Pat's Salmon Cookies </h1>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/sales.html">Sales Data</a></li>
-      </ul>
-    </nav>
-  </header>
 
-    <form id="location-info">
+    <form id="newlocation-info">
         <legend> Add a location </legend>
       <fieldset>
           <label for="location">Location:</label>
@@ -38,19 +38,8 @@
 
       <fieldset>
           <label for="avgCookie">Average cookie sale:</label>
-          <input type="number" name="avgCookie" placeholder="Cookies" minLength="1" required>
+          <input type="number" name="avgCookie" placeholder="enter last name" minLength="1" required>
       </fieldset>
-
-      <!-- <fieldset>
-          <label for="enrolled">Maximum customers expected</label>
-          <input type="checkbox" name="enrolled" value="enrolled">
-      </fieldset>
-
-      <fieldset>
-          <label for="future_classes">interested in taking future classes?</label>
-          <input type="radio" name="future_classes" value="sure"> yes
-          <input type="radio" name="future_classes" value="nah"> no
-      </fieldset> -->
 
       <button id="submit_btn" type="submit">add store</button>
   </form>
@@ -62,7 +51,9 @@
   
   <table id="my-table">
       <caption>CookieCounterCalculator</caption>
-
+      <tbody id="tbody">
+        
+      </tbody>
   </table>
 
 
